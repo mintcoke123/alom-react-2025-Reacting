@@ -4,6 +4,7 @@ export const SearchPageConstant = {
     },
     SearchRecentContainer: {
         placeholder: "최근 검색어",
+        emptyMessage: "최근 검색어가 없습니다",
     },
     SearchTitleContainer: {
         title: "찾아주소",

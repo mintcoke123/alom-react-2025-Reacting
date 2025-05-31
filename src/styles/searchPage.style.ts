@@ -87,25 +87,26 @@ export const InputSearch = styled.input`
 
 export const RecentContainer = styled.div`
   margin-top: 2rem;
-  width: 50%;
+  width: 55%;
 `;
 
 export const RecentRow = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
   width: 100%;
 `;
 
 export const RecentLabel = styled.div`
-  width: 25%;
+  min-width: 90px;
   font-size: 1rem;
   color: #888;
+  margin-right: 4rem;
 `;
 
 export const RecentKeywords = styled.div`
-  width: 75%;
   display: flex;
-  gap: 1rem;
-  justify-content: space-between;
+  gap: 10rem;
 `;
 
 export const Keyword = styled.span`
@@ -117,4 +118,23 @@ export const Keyword = styled.span`
   &:hover {
     color: #8f5ac0;
   }
+`;
+
+export const RemoveButton = styled.button`
+  background: none;
+  border: none;
+  padding: 2px;
+  cursor: pointer;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  
+  &:hover {
+    color: #8f5ac0;
+  }
+`;
+
+export const EmptyMessage = styled.div`
+  color: #888;
+  font-size: 1rem;
 `;
