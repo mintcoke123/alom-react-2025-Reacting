@@ -30,7 +30,7 @@ const SearchRecentContainer = () => {
   };
 
   const searchResults = JSON.parse(localStorage.getItem('searchResults') || '{}');
-  const matchedResults = recentKeywords.map(keyword => searchResults[keyword]);
+  const matchedResults = recentKeywords.map((keyword) => searchResults[keyword]);
   console.log(matchedResults);
 
   return (
