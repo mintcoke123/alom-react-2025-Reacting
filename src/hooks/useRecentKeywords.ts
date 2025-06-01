@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getRecentKeywords, addRecentKeyword, clearRecentKeywords } from '../utils/storage/recentKeyword';
+import { getRecentKeywords, addRecentKeyword, removeRecentKeyword } from '../utils/storage/recentKeywords';
 
 export const useRecentKeywords = () => {
   const [keywords, setKeywords] = useState<string[]>([]);
@@ -13,8 +13,8 @@ export const useRecentKeywords = () => {
     setKeywords(getRecentKeywords());
   };
 
-  const clearKeywords = () => {
-    clearRecentKeywords();
+  const clearKeywords = (keyword: string) => {
+    removeRecentKeyword(keyword);
     setKeywords([]);
   };
 
@@ -23,4 +23,4 @@ export const useRecentKeywords = () => {
     addKeyword,
     clearKeywords,
   };
-}; 
+};

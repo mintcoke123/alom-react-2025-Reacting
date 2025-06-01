@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FiSearch } from 'react-icons/fi';
 import * as S from '../styles/mapPage.style';
 import { addRecentKeywordAndResult } from './SearchRecentContainer';
