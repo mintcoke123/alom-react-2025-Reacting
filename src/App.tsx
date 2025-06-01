@@ -1,6 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import SearchPage from "./components/SearchPage";
-import MapPage from "./pages/MapPage";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import SearchPage from './components/SearchPage';
+import MapPage from './components/MapPage';
 
 function App() {
   return (
